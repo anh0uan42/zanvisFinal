@@ -485,6 +485,17 @@ form button:hover {
         width: 80%;
     }
 
+    #sign-up {
+        height: 70%;
+    }
+
+    #signed-in {
+        flex-direction: row;
+        font-size: .6rem;
+        align-items: center;
+        margin: o;
+    }
+
     #hidden-menu ul {
         display: block;
     }
