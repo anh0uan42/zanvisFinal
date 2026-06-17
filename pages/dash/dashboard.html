@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../styles.css">
+        <script type="module" src="script.js" defer></script>
+        <script type="module" src="../../script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Strichpunkt+Sans:wght@400..900&display=swap" rel="stylesheet">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class="blur" id="blur">
+            <header>
+                <div class="header-nav" id="header-nav">
+                    <h1><a href="../../index.html">Online School</a></h1>
+                    <nav>
+                        <ul>
+                            <li><a href="../courses/courses.html">Courses</a></li>
+                            <li><a href="../news/news.html">News</a></li>
+                            <li><a href="../research/research.html">Research</a></li>
+                            <li><a href="../about/about.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                    <h4 id="mobile-menu">MENU</h4>
+                    <div id="hidden-menu">
+                        <ul>
+                            <li><a href="../courses/courses.html">Courses</a></li>
+                            <li><a href="../news/news.html">News</a></li>
+                            <li><a href="../research/research.html">Research</a></li>
+                            <li><a href="../about/about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="enrollment" id="enrollment">
+                    <button id="signin">Sign In</button>
+                    <button id="signup">Sign Up</button>
+                </div>
+                <div class="signed-in" id="signed-in">
+                    <h6>Welcome back! <span id="signed-in-username"></span></h6>
+                    <div class="signed-in-btn">
+                        <button id="dashboard"><a href="dashboard.html">Dashboard</a></button>
+                        <button id="sign-out">Sign Out</button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section>
+                    <h2><span id="user-full-name"></span> Dashboard</h2>
+                    <div>
+                        <div class="card-container" id="courses-container">
+                        </div>
+                    </div>
+                </section>
+                
+                <form id="sign-in">
+                    <h3>Sign In</h3>
+                    <div class="input-container">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" autocomplete="username" />
+                    </div>
+                    <div class="input-container">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password"> 
+                    </div>
+                    <button>Submit</button>
+                </form>
+                <form id="sign-up">
+                    <h3>Sign Up</h3>
+                    <div class="input-container">
+                        <label for="fullname">Fullname</label>
+                        <input type="text" id="fullname" name="fullname"/>
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" autocomplete="email"/>
+                    </div>
+                    <div class="input-container">
+                        <label for="sign-up-username">Username</label>
+                        <input type="text" id="sign-up-username" name="sign-up-username"/>
+                    </div>
+                    <div class="input-container">
+                        <label for="sign-up-password">Password</label>
+                        <input type="password" id="sign-up-password" name="sign-up-password" > 
+                    </div>
+                    <div class="input-container">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password"> 
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </main>
+            <footer>
+                <h3>ONLINE SCHOOL</h3>
+                <div>
+                    <h6>Telephone:</h6>
+                    <h6>Email:</h6>
+                    <h6>Website:</h6>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
