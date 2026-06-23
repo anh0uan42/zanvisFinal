@@ -14,6 +14,8 @@ const user = JSON.parse(localStorage.getItem("user"))
 
 const subject = socialStudies.find(a => a.id == subjectId)
 
+const isLoggedIn = localStorage.getItem('isLoggedIn')
+
 if (!isLoggedIn) {
     enroll.addEventListener('click', () => {
         alert('Please sign in to enroll!')
