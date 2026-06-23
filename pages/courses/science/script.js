@@ -15,7 +15,13 @@ const user = JSON.parse(localStorage.getItem("user"))
 
 const subject = science.find(a => a.id == subjectId)
 
-console.log(subjectId, subjectCategory)
+const isLoggedIn = localStorage.getItem('isLoggedIn')
+
+if (!isLoggedIn) {
+    enroll.addEventListener('click', () => {
+        alert('Please sign in to enroll!')
+    })
+}
 
 
 if (subject) {

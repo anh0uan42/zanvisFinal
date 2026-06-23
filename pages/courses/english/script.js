@@ -15,6 +15,12 @@ const user = JSON.parse(localStorage.getItem("user"))
 
 const subject = english.find(a => a.id == subjectId)
 
+if (!isLoggedIn) {
+    enroll.addEventListener('click', () => {
+        alert('Please sign in to enroll!')
+    })
+}
+
 
 if (subject) {
     subjectTitle.textContent = subject.name
